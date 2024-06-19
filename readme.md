@@ -10,21 +10,6 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 
 > Don't forget to set the `JDBC URL` value as `jdbc:h2:mem:testdb` for H2 UI.
 
-### Changes made to the repository
-- remove setter when @Autowired is used
-- add @RequestBody when missing
-- use Spring Cache to cache DB calls
-- use ModelMapper to obfuscate some field when returning response
-
-### Remarks regarding improvements If I had more time
-- use JWT instead of Basic for authorization
-- store user/password to DB
-- write more JUnit tests to cover all the methods
-- add RateLimiting to the API to protect overuse
-
-### My experience in Java/Spring
-I have about 13 years of experience in Java and I have worked with Spring for many years building and maintaining several API and Gateway. I used Spring-batch as well on one project
-
 ### Instructions
 
 - download the zip file of this project
@@ -63,3 +48,19 @@ Please let us know more about your Java experience in a few sentences. For examp
 - I have 3 years experience in Java and I started to use Spring Boot from last year
 - I'm a beginner and just recently learned Spring Boot
 - I know Spring Boot very well and have been using it for many years
+
+
+### Changes made to the repository
+- remove setter when @Autowired is used
+- add @RequestBody when missing
+- use Spring Cache to cache DB calls
+- use ModelMapper to obfuscate some field when returning response
+
+### Remarks regarding improvements If I had more time
+- use JWT instead of Basic for authorization
+- store user/password to DB
+- write more JUnit tests to cover all the methods
+- add RateLimiting to the API to protect overuse
+
+### My experience in Java/Spring
+I have about 13 years of experience in Java and I have worked with Spring for many years building and maintaining several API and Gateway. I used Spring-batch as well on one project
