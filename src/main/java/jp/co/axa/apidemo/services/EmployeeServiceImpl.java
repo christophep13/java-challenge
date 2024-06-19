@@ -32,7 +32,7 @@ public class EmployeeServiceImpl implements EmployeeService{
         return employees;
     }
     
-    @Cacheable(value = "employee", key= "#employeeId")
+    @CachePut(value = "employee", key= "#employeeId")
     public Employee getEmployee(Long employeeId) {
     	try {
     		Optional<Employee> optEmp = employeeRepository.findById(employeeId);
