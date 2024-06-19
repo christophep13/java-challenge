@@ -2,7 +2,6 @@ package jp.co.axa.apidemo.entities.mapper;
 
 import java.util.List;
 
-import org.modelmapper.Conditions;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Component;
@@ -20,10 +19,6 @@ public class EmployeeMapper {
 
 	public EmployeeMapper() {
 		this.mapper = new ModelMapper();
-		//this.mapper.getConfiguration()
-		//.setPropertyCondition(Conditions.isNotNull())
-		//;
-		
 		this.mapper.typeMap(Employee.class, EmployeeDto.class)
 		.addMappings(mapper -> mapper.skip(EmployeeDto::setId));
 	}
